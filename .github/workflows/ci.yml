@@ -92,3 +92,7 @@ jobs:
 
       - name: Test
         run: cargo test-all-features
+
+      - uses: actions/upload-artifact@v4
+        with:
+          path: target/
